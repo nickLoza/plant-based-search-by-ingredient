@@ -1,0 +1,10 @@
+@use "../vars/vars" as *;
+
+
+.recipes-details{
+	&__img{
+		width: 980px;
+		margin: auto;
+		object-fit: cover;
+	}
+}

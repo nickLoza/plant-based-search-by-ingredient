@@ -1,0 +1,19 @@
+@use "./components/reset";
+@use "./components/vars/vars" as *;
+@use "./components/layouts/header";
+@use "./components/layouts/home";
+@use "./components/layouts/recipes";
+@use "./components/layouts/recipesDetails";
+@use "./components/layouts/footer";
+
+
+body{
+	background-color: $text-color-inverse;
+	color: $text-color;
+
+}
+
+.main{
+	min-height: 100vh;
+	margin-top: 4rem;
+}

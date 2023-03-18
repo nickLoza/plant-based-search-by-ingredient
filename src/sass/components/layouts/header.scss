@@ -1,0 +1,23 @@
+@use "../vars/vars" as *;
+
+.header{
+	height: $header-height;
+	width: 100%;
+	background-color: $text-color;
+	&__navbar{
+		padding: .4rem 1rem;
+		width: 100%;
+		&-logo{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			font-size: 2.1rem;
+			color: $text-color-inverse;
+			svg{
+				width: 3rem;
+				font-size: 2.3rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@use "../vars/vars" as *;
+
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $text-color;
+	color: $text-color-inverse;
+	padding: 1rem 1.5rem;
+	padding-bottom: 6rem;
+	gap: 3rem;
+	&__logo{
+		font-size: 3rem;
+	}
+
+	&__text{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 980px;
+		margin: auto;
+		gap: 2rem;
+		.group{
+			display: flex;
+			flex-direction: column;
+			gap: .5rem;
+			max-width: 300px;
+			&__title{
+				font-size: 1.7rem;
+			}
+			&__socials{
+				display: flex;
+				font-size: 1.6rem;
+				margin-top: 1.5rem;
+				svg{
+					cursor: pointer;
+					transition: color $speed;
+					&:hover{
+					color: #00D574;
+					}
+				}
+			}
+			&__text{
+				letter-spacing: .1rem
+			}
+		}
+	}
+}

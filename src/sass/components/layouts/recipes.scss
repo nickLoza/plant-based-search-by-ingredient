@@ -1,0 +1,52 @@
+@use "../vars/vars" as *;
+
+
+
+
+.recipes{
+
+
+	&__title{
+		text-align: center;
+		font-size: 2.1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	&__dishes{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		&-link{
+			position: relative;
+			height: 150px;
+			width: 200px;
+			&:hover{
+				.recipes__dishes-title{
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+		}
+		&-title{
+			position: absolute;
+			bottom: 5%;
+			left: 5%;
+			width: 90%;
+			text-align: center;
+			font-size: 1.1rem;
+			background-color: #eee;
+			color: $text-color;
+			border-radius: 17px;
+			transform: translateY(10%);
+			opacity: 0;
+			transition: transform $speed, opacity $speed;
+			
+		}
+		&-img{
+			height: 150px;
+			object-fit: cover;
+		}
+	}
+}

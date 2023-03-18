@@ -1,0 +1,35 @@
+@use "../vars/vars" as *;
+
+
+.home{
+	padding: 1rem 2rem;
+	text-align: center;
+	max-width: $max-width;
+	margin: 0 auto;
+	&__title{
+		font-size: 2.4rem;
+		margin: 2rem 0;
+	}
+	&__ingredients{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: center;
+		&-link{
+			width: 200px;
+			height: 100px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			border: 1px solid $text-color;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			transition: border-color $speed, color $speed;
+			&:hover{
+				border-color: #009443;
+				color: #009443;
+			}
+		}
+	}
+}
